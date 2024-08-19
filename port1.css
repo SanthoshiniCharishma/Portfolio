@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-right: 30px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 3rem;
+    scroll-margin-top: 4rem;
+}
+
+section#home {
+    background: url("https://media.istockphoto.com/id/1476981828/photo/background.webp?b=1&s=170667a&w=0&k=20&c=tFnPoUDBWCwrhpYyb8JLnEGWA8b_xpyqwjK97nMdoME=") no-repeat center center/cover;
+    color: black;
+    height: 100vh;
+    text-align: center;
+    padding: 10rem 0;
+}
+
+section#projects,
+section#about,
+section#contacts {
+    margin-top: 0rem;
+    background: url("https://media.istockphoto.com/id/1476981828/photo/background.webp?b=1&s=170667a&w=0&k=20&c=tFnPoUDBWCwrhpYyb8JLnEGWA8b_xpyqwjK97nMdoME=") no-repeat center center/cover;
+}
+section#contacts {
+    min-height: calc(100vh - 6rem); 
+    padding-top: 1rem; 
+    padding-bottom: 2rem; 
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+.project {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .social-media {
+    margin-top: 5px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    animation: fadeIn 1s ease-out;
+}
